@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.alarm-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.current-time {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #764ba2;
+}
+
+.alarm-settings {
+    margin-bottom: 20px;
+}
+
+.alarm-settings label {
+    display: block;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+}
+
+.alarm-settings input[type="time"] {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+
+button {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #764ba2;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.alarm-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#snoozeBtn {
+    background-color: #ffa502;
+}
+
+#snoozeBtn:hover {
+    background-color: #ff9f1a;
+}
+
+#stopAlarmBtn {
+    background-color: #ff4757;
+}
+
+#stopAlarmBtn:hover {
+    background-color: #ff6b81;
+}
+
+.hidden {
+    display: none;
+}
+
+#alarmMessage {
+    color: #ff4757;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ffa502;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .alarm-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .current-time {
+        font-size: 2.5rem;
+    }
+
+    .alarm-settings input[type="time"] {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
